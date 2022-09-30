@@ -1,0 +1,108 @@
+/*레이아웃*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    /*메인과 헤더의 비율설정*/
+    height: 10vh;
+    /*헤더의 색상설정*/
+    background-color: #00d4ff;
+    color:#cde5ff;
+    /*header의 위치설정*/
+    display: flex;
+    justify-content: center;/*가로축*/
+    align-items: center;/*세로축*/
+    top: 0;
+    position: sticky;
+}
+
+
+
+main {
+    /*main의 사이즈 설정*/
+    /*메인과 헤더의 비율설정*/
+    height: 90vh;
+    background-color: #cde5ff;
+    /*header의 위치설정*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*가로축*/
+    align-items: center;/*세로축*/
+}
+
+section {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#msg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;/*가로축*/
+    align-items: center;/*세로축*/
+}
+
+.divMsg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+button {
+    /*button의 위치설정*/
+    display: inline-block;
+    width: 100%;
+    /*button 사이의 폭 설정*/
+    margin : 1vh;
+    /*button 사이즈 설정*/
+    width: 50vw;
+    max-width: 200px;
+    height: 20vw;
+    max-height: 30px;
+    /*button 모양 설정*/
+    border:none;
+    border-radius: 8px;
+    /*button 색상설정*/
+    background-color: aquamarine;
+    color: black;
+}
+
+
+.select {
+    display: flex;
+    flex-direction:row;
+    height: 24px;
+    width: 24px;
+    padding: 2px 2px;
+    margin: 0px 0px;
+}
+.select input[type=radio]{
+    display: none;
+}
+.select input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #333;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+}
+.select input[type=radio]+label{
+    background-color: #fff;
+    color: #333;
+}
+.select input[type=radio]:checked+label{
+    background-color: #333;
+    color: #fff;
+}

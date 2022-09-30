@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--스타일 시트 적용하기-->
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>JS PWA</title>
+    <!--내부 자바스크립트-->
+    <!-- first place,
+    <script>
+        alert("Hellow world!");
+    </script>-->
+    <!--외부 자바스크립트-->
+    <!-- <script src="./JS/index.js"></script> -->
+    <script src="./JS/dom.js"></script>
+</head>
+<body>
+    <!--내부 자바스크립트-->
+    <!-- second place,
+    <script>
+        alert("Hellow world!");
+    </script>-->
+    <div id="root">
+        <header>
+            <h1>주사위게임</h1>
+        </header>
+        <main id="content">
+            <section id="msg">
+            </section>
+            <section id="bt">
+                <button class="bt1" onclick="start();">Start!</button><!--자바스크립트 호출방법 onclick-->
+                <!--<button class="bt1" onclick="funPrint(2);">버튼2</button>--><!--자바스크립트 호출방법 onclick-->
+            </section>
+        </main>
+    </div>
+    <!--내부 자바스크립트-->
+    <!-- Third place,
+    <script>
+        alert("Hellow world!");
+    </script>-->
+</body>
+</html>
